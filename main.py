@@ -32,7 +32,7 @@ file_names = []
 exts = []
 
 # Define File Path
-path = r"E:\hi"  # Please Edit The Srings With Related File Path
+path = r"FILE PATH"  # Please Edit The Srings With Related File Path
 
 # Get All The File And Folder Names
 all_files = os.listdir(path)
