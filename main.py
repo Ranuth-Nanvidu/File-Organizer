@@ -1,5 +1,3 @@
-"""Some Times This Program Might Not Work Properly At The First Run Please Run Second Time It Will Works"""
-
 # Created With Love By Ranuth Nanvidu
 # To Properly Work This Program Please Put Your Folder Path In Below Variable Named "path" Inside The Double Quotations
 
@@ -114,6 +112,7 @@ for z in unique_exts:
 def move_file(folder, file_name):
     """This Function Help To Move Files To Related Folders"""
     dest_folder = os.path.join(path, folder)
+    os.makedirs(dest_folder, exist_ok = True)
     src = os.path.join(path,file_name)
     dest = os.path.join(dest_folder, file_name)
     shutil.move(src, dest)
